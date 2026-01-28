@@ -123,7 +123,7 @@ export default function Projects() {
 </AnimatePresence>
 
 
-              {/* IMAGE HEIGHT INCREASED */}
+            
               <div
                 className={`relative w-full overflow-hidden bg-black/20 shadow-2xl
                 md:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.7)] ${

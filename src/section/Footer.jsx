@@ -38,7 +38,7 @@ export default function Footer() {
     },
     {
       icon: <FaGithub />,
-      url: "https://github.com/amit9950",
+      url: "https://github.com/ankitShakyawar8765",
       label: "GitHub",
       gradient: "from-[#333] to-[#6e5494]"
     },

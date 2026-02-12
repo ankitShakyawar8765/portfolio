@@ -8,6 +8,11 @@ const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
+// Initialize EmailJS only if credentials are available
+if (SERVICE_ID && PUBLIC_KEY) {
+  emailjs.init(PUBLIC_KEY);
+}
+
 export default function Contact() {
 
   const [formData, setFormData] = useState({
@@ -55,6 +60,13 @@ export default function Contact() {
     e.preventDefault();
 
     if (!validateForm()) return;
+
+    // Check if EmailJS credentials are configured
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      setStatus("error");
+      console.error("EmailJS credentials not configured");
+      return;
+    }
 
     setStatus("sending");
 

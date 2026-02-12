@@ -2,7 +2,7 @@
   "name": "my-project",
   "private": false,
   "version": "0.0.0",
-  "homepage": "https://ankitshakyawar8765.github.io/portfolio",
+  "homepage": "https://github.com/ankitShakyawar8765/ankit.git",
   "type": "module",
   "scripts": {
     "dev": "vite",

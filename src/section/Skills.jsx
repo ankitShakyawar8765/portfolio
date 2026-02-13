@@ -112,13 +112,13 @@ export default function Skills() {
         <div className='absolute top-1/4 left-0 w-75 h-75 rounded-full bg-linear-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse
         '/>
 
-        <div className='absolute bottom-1/4 right-0 w-[300px] h-75 rounded-full bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse delay-500
+        <div className='absolute bottom-1/4 right-0 w-75 h-75 rounded-full bg-linear-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse delay-500
         '/>
 
 
       </div>
 
-      <motion.h2 className='text-4xl mt-5 sm: text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] z-10'
+      <motion.h2 className='text-4xl mt-5 sm: font-bold bg-clip-text text-transparent bg-linear-to-r from-[#1cd8d2] via-[#00bf8f] to-[#302b63] z-10'
       initial={{opacity:0 , y:-30}}
       whileInView={{opacity:1 , y:0}}
       transition={{duration:0.5 , delay:0.1}}
@@ -142,7 +142,7 @@ export default function Skills() {
          >
 
           {repeated.map((s ,i) => (
-           <div key={i} className='flex flex-col items-center gap-2 min-w-[120px]'
+           <div key={i} className='flex flex-col items-center gap-2 min-w-30'
            aria-label = {s.name}
            title = {s.name}
            >
@@ -156,7 +156,7 @@ export default function Skills() {
             </p>
            </div>
           )
-        )}
+        )}  
 
          </motion.div>
         </div>
